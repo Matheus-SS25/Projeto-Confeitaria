@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/script.js" defer></script>
+    <title>Projeto - Cardápio</title>
+</head>
+
+<body class="bg-amber-50">
+    <!--HEADER-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center bg-neutral-950 opacity-80">
+            <img src="./assets/bolinho-de-chuva-icone.jpg" alt="Logo Dev Confeitaria"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 outline-double outline-8 outline-offset-2 outline-amber-400">
+
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+                Dev Confeitaria
+            </h1>
+
+            <span class="text-white font-medium">Rua dev 10, Campo Grande - MS</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium"> Atendimento: Seg á Sex - 8:00 as 18:00</span>
+            </div>
+        </div>
+    </header>
+    <!--FIM HEADER-->
+
+    <h2 class="text-xl md:text-3xl font-bold text-center mt-9 mb-6 text-amber-950">
+        Conheça nosso menu
+    </h2>
+
+    <!--INICIO MENU-->
+    <div id="menu">
+        <main
+            class="bg-amber-100 p-20 rounded shadow-lg grid grid-cols-l md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl mb-16">
+            <!--Produto item-->
+            <div class="flex gap-2">
+                <img src="./assets/bolinho-de-chuva-sm.jpeg" alt="Bolinho de Chuva - ExSmall"
+                    class="w-32 h-32 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Bolinho de Chuva - Porção XS</p>
+                    <p class="text-sm">Bolinho de chuva é uma especialidade típica no Brasil. É feito de farinha de
+                        trigo, ovos, leite e fermento químico ou bicarbonato de sódio. Os bolinhos
+                        são fritos em óleo quente e polvilhados com canela e açúcar. ~138g</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$12.90</p>
+                        <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Porção XS"
+                            data-price="12.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto item-->
+
+            <!--Produto item-->
+            <div class="flex gap-2">
+                <img src="./assets/bolinho-de-chuva-s.jpeg" alt="Bolinho de Chuva - Small "
+                    class="w-32 h-32 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Bolinho de Chuva - Porção S</p>
+                    <p class="text-sm">Bolinho de chuva é uma especialidade típica no Brasil. É feito de farinha de
+                        trigo, ovos, leite e fermento químico ou bicarbonato de sódio. Os bolinhos
+                        são fritos em óleo quente e polvilhados com canela e açúcar. ~253g</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$23.65</p>
+                        <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Porção S"
+                            data-price="23.65">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto item-->
+
+            <!--Produto item-->
+            <div class="flex gap-2">
+                <img src="./assets/bolinho-de-chuva-m.jpeg" alt="Bolinho de Chuva - Medium"
+                    class="w-32 h-32 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Bolinho de Chuva - Porção M</p>
+                    <p class="text-sm">Bolinho de chuva é uma especialidade típica no Brasil. É feito de farinha de
+                        trigo, ovos, leite e fermento químico ou bicarbonato de sódio. Os bolinhos
+                        são fritos em óleo quente e polvilhados com canela e açúcar. ~368g</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$34.40</p>
+                        <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Porção M"
+                            data-price="34.40">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto item-->
+
+            <!--Produto item-->
+            <div class="flex gap-2">
+                <img src="./assets/bolinho-de-chuva-g.jpeg" alt="Bolinho de Chuva - Grande"
+                    class="w-42 h-32 min-w-32 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Bolinho de Chuva - Porção G</p>
+                    <p class="text-sm">Bolinho de chuva é uma especialidade típica no Brasil. É feito de farinha de
+                        trigo, ovos, leite e fermento químico ou bicarbonato de sódio. Os bolinhos
+                        são fritos em óleo quente e polvilhados com canela e açúcar. ~483g</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$45.15</p>
+                        <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Porção G"
+                            data-price="45.15">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Fim produto item-->
+        </main>
+
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-xl md:text-3xl text-center mb-6 text-amber-950">
+                Bebidas
+            </h2>
+        </div>
+
+        <!--GRID BEBIDAS-->
+        <div class="bg-amber-100 p-20 rounded shadow-lg grid grid-cols-l md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl mb-16"
+            id="menu">
+
+
+            <!--Bebida item-->
+            <div class="flex gap-2 w-full">
+                <img src="./assets/refri-1.png" alt="Coca lata"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Coca Lata - 350ml</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$6</p>
+                        <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Coca lata" data-price="6">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM Bebida item-->
+
+            <!--Bebida item-->
+            <div class="flex gap-2 w-full">
+                <img src="./assets/refri-2.png" alt="Guaraná lata"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Guaraná Lata - 350ml</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$6</p>
+                        <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Guaraná lata"
+                            data-price="6">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM Bebida item-->
+
+            <!--Bebida item-->
+            <div class="flex gap-2 w-full">
+                <img src="./assets/suco-la.png" alt="Suco Natural - Laranja"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Suco Natural - Laranja 1l</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$19</p>
+                        <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Suco Natural - Laranja"
+                            data-price="19">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM Bebida item-->
+
+            <!--Bebida item-->
+            <div class="flex gap-2 w-full">
+                <img src="./assets/suco-lm.jpeg" alt="Suco Natural - Limão"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Suco Natural - Limão 900ml</p>
+
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$13</p>
+                        <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Suco Natural - Limão"
+                            data-price="13">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM Bebida item-->
+        </div>
+        <!-- FIM GRID BEBIDAS-->
+
+    </div>
+
+    <!--FIM MENU-->
+
+    <!-- MODAL CART-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden"
+        id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Total: <span id="cart-total">00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega</p>
+            <input type="text" placeholder="Digite seu Endereço completo" id="address"
+                class="w-full border-2 p-1 rounded my-1">
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!--FIM MODAL CART -->
+
+    <!--BUTTON CART FOOTER-->
+    <footer
+        class="w-32 bg-amber-600 hover:bg-amber-800 py-5 fixed bottom-0 z-40 rounded-tr-lg flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+            (<span id="cart-count">0</span>)
+        </button>
+    </footer>
+    <!--FIM BUTTON CART FOOTER-->
+</body>
+
+</html>
